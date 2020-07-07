@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"iapboot\startup_stm32f103xe.o"
+"iapboot\main.o"
+"iapboot\gpio.o"
+"iapboot\usart.o"
+"iapboot\stm32f1xx_it.o"
+"iapboot\stm32f1xx_hal_msp.o"
+"iapboot\stm32f1xx_hal_gpio_ex.o"
+"iapboot\stm32f1xx_hal_tim.o"
+"iapboot\stm32f1xx_hal_tim_ex.o"
+"iapboot\stm32f1xx_hal_uart.o"
+"iapboot\stm32f1xx_hal.o"
+"iapboot\stm32f1xx_hal_rcc.o"
+"iapboot\stm32f1xx_hal_rcc_ex.o"
+"iapboot\stm32f1xx_hal_gpio.o"
+"iapboot\stm32f1xx_hal_dma.o"
+"iapboot\stm32f1xx_hal_cortex.o"
+"iapboot\stm32f1xx_hal_pwr.o"
+"iapboot\stm32f1xx_hal_flash.o"
+"iapboot\stm32f1xx_hal_flash_ex.o"
+"iapboot\stm32f1xx_hal_exti.o"
+"iapboot\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "IAPBOOT\IAPBOOT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "IAPBOOT.map" -o IAPBOOT\IAPBOOT.axf

@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"iapapp\startup_stm32f103xe.o"
+"iapapp\main.o"
+"iapapp\gpio.o"
+"iapapp\tim.o"
+"iapapp\usart.o"
+"iapapp\stm32f1xx_it.o"
+"iapapp\stm32f1xx_hal_msp.o"
+"iapapp\stm32f1xx_hal_gpio_ex.o"
+"iapapp\stm32f1xx_hal_tim.o"
+"iapapp\stm32f1xx_hal_tim_ex.o"
+"iapapp\stm32f1xx_hal.o"
+"iapapp\stm32f1xx_hal_rcc.o"
+"iapapp\stm32f1xx_hal_rcc_ex.o"
+"iapapp\stm32f1xx_hal_gpio.o"
+"iapapp\stm32f1xx_hal_dma.o"
+"iapapp\stm32f1xx_hal_cortex.o"
+"iapapp\stm32f1xx_hal_pwr.o"
+"iapapp\stm32f1xx_hal_flash.o"
+"iapapp\stm32f1xx_hal_flash_ex.o"
+"iapapp\stm32f1xx_hal_exti.o"
+"iapapp\stm32f1xx_hal_uart.o"
+"iapapp\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "IAPAPP\IAPAPP.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "IAPAPP.map" -o IAPAPP\IAPAPP.axf
